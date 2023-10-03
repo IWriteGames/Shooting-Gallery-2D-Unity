@@ -18,11 +18,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        #if UNITY_EDITOR
-                if (Input.GetKeyDown(KeyCode.P))
-        #else
-                if (Input.GetKeyDown(KeyCode.Escape))
-        #endif
+        if (Input.GetKeyDown(KeyCode.P))
         {
             PauseGameButton();
         }
